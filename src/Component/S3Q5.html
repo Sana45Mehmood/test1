@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+           
+    
+        </script>
+    </head>
+    <body>
+        <form>
+            <label>Your Date Of Birth</label>
+            <br><br>
+            <input type="date" id="dob">
+            <br>
+            <br>
+            <input type="button" onclick="calculate()" value="Calculator">
+        </form>
+        <p id="b"></p>
+        <script>
+            function calculate(){
+var dat= document.getElementById("dob").value;
+var m= new Date(dat);
+var y= m.getFullYear();
+var mo=m.getMonth();
+var da =m.getDate();
+var now = new Date();  
+var cy=now.getFullYear();
+var cmo= now.getMonth();
+var cda = now.getDate();
+var year= cy-y;
+var month=cmo-mo;
+var day= cda-da;
+
+document.getElementById("b").innerHTML= year+" years " + month+" months "+day+" days ";    
+            }
+           
+        </script>
+    </body>
+</html>

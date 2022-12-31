@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+           
+    
+        </script>
+    </head>
+    <body>
+        <p id="s"></p>
+        <script>
+          var sum=0;
+          
+             var n=prompt("Enter a number that is grater then 5 ");
+             
+             var d= new Array();
+           if(n>=100000){
+          n1=  n.toString().length;
+       
+         
+            for(var k=0;k<n1-1;k++){
+                nd=n;
+             n=parseInt(n/10);
+            var r =nd%10;
+            if(r%2==1){
+               
+             d[k]=r;
+            }
+            else{
+                d[k]=0; 
+            }
+            }
+            if(n%2==1){
+            d[k]=n;
+            }
+            else{
+                d[k]=0;
+            }
+           
+          for(var i=0;i<d.length;i++){
+           
+             var sum= sum+d[i];
+          }
+          document.getElementById("s").innerHTML= "Sum = " + sum;
+          }
+     
+           else{
+            document.getElementById("s").innerHTML="Enter a number greater than five digits";
+           } 
+        </script>
+    </body>
+</html>
