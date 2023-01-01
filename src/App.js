@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Animal from './Component/S4Q';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         >
         hhhhhhhhh
         </a>
+        <Animal/>
       </header>
     </div>
   );
