@@ -12,15 +12,15 @@ function Animal() {
       fetch("https://learnwebcode.github.io/json-example/animals-2.json")
         .then((response) => response.json())
         .then((data) => console.log(data));
-      setIsShown(0);
-      setIsVisible(false);
+      setIsShown(2);
+       setIsVisible(true);
     }
-    //  else if (isShown == 2) {
-    //   fetchAPI("https://learnwebcode.github.io/json-example/animals-3.json")
-    //     .then((response) => response.json())
-    //     .then((data) => console.log(data));
-    //   setIsShown(0);
-    // }
+     else if (isShown == 2) {
+      fetchAPI("https://learnwebcode.github.io/json-example/animals-3.json")
+        .then((response) => response.json())
+       .then((data) => console.log(data));
+      setIsShown(0);
+     }
   };
   console.log(isShown);
   console.log(isVisible);
